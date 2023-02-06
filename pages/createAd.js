@@ -7,7 +7,7 @@ import { useAuth } from "context/auth";
 import { API_URL } from "@/constants/api";
 import { categories as localCategories } from "@/data/categories";
 
-import Step1 from "@/components/createAd/step1/index";
+import Step1 from "@/components/createAd/step1";
 import Step2 from "@/components/createAd/step2";
 import Step3 from "@/components/createAd/step3";
 import Step4 from "@/components/createAd/step4";
@@ -151,6 +151,7 @@ export default function CreateAd({ categories }) {
       return prev > -1 ? prev - 1 : prev;
     });
   };
+
 
   // console.log("filters", filters);
   // console.log("subCategory", subCategory);
