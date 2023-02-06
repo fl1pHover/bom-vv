@@ -27,6 +27,7 @@ export const AuthProvider = ({ children }) => {
     } catch (e) {
       console.log(e);
     }
+
     if (token && token != undefined) {
       const { data: data } = await axios.get(`${urls["test"]}/user/me`, {
         headers: {

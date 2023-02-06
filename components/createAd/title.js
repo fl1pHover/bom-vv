@@ -4,7 +4,7 @@ import FormLine from "./formLine";
 const FormTitle = (props) => {
   return (
     <div>
-      <p className="text-4xl text-center font-medium mb-6">{props.children}</p>
+      <p className="text-4xl text-center font-semibold mb-6">{props.children}</p>
     </div>
   );
 };
